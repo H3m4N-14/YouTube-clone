@@ -1,0 +1,135 @@
+.thumbnail {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 15 px;
+}
+
+.video-title a{
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 35px;
+  border-radius: 50px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+
+.video-stats{
+  margin-top: 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 35px;
+}
+
+@media (max-width:1480px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:1025px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:650px) {
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-time{
+  font-family: Roboto, Arial;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: 500;
+
+}
+
+.channel-picture {
+  position: relative;
+  cursor: pointer;
+}
+
+.channel-profile-tooltip-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  column-gap: 40px;
+  bottom: -23px;
+  left: 32px;
+  background-color: rgb(244, 244, 244);
+  padding: 10px 12px 10px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+.channel-picture:hover .channel-profile-tooltip-grid{
+  opacity: 1;
+}
+
+.channel-profile-tooltip-grid img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.channel-profile-tooltip-info-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.channel-profile-tooltip-info-grid div {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.channel-profile-tooltip-info-grid :last-child{
+  font-weight: 400;
+  color: rgb(130, 130, 130);
+}

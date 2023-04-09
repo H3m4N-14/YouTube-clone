@@ -1,0 +1,33 @@
+*:focus{
+  outline: none;
+}
+
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: Roboto, Arial;
+  padding: 100px 80px 40px 250px;
+  margin: 0;
+}
+
+@media (max-width:1190px) {
+  body {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width:710px) {
+  body {
+    padding: 100px 30px 40px;
+  }
+}
+
+@media (max-width:650px) {
+  body {
+    padding: 100px 50px 40px;
+  }
+}
